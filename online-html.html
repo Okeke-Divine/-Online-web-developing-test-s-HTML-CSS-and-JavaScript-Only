@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC  "">
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+  <title>Skiyen | Online Inbuilt TextEditor And Browser | For Programmers </title>
+  <link rel="shortcut icon" type="image/ico" href="../S1.ico">
+  <meta charset="windows-1252">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="sk-stockpie.css">
+</head>
+<body>
+        <table id="table" class="hundred" border="1">
+            <th class="hundred blink" style="text-align: center;">Your Work</th>
+        </table>
+      </div>
+      <div class="tab tab-2">
+        <textarea type="text" style="text-align: center;" class="hundred" name="fname" id="fname" placeholder="Input your code"></textarea><center>
+        <button class="btn btn-primary" onclick="addHTMLTableRow()">View</button></center>
+<input type="hidden" name="lname" id="lname" placeholder="Last Name">
+<input type="hidden" name="age" id="age" placeholder="Age"><br>
+<center>
+    </div>
+</center>
+
+    <script type="text/javascript">
+      function addHTMLTableRow(){
+        var table = document.getElementById("table"),
+            newRow = table.insertRow(table.lenght),
+            cell1 = newRow.insertCell(0),
+            fname = document.getElementById("fname").value,
+            lname = document.getElementById("lname").value,
+            age = document.getElementById("age").value;
+
+
+
+          cell1.innerHTML = fname;
+          cell2.innerHTML = lname;
+          cell3.innerHTML = age;
+      }
+    </script>
+
+</body>
+</html>
